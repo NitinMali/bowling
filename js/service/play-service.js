@@ -64,7 +64,7 @@ bowling.service("playService", ['game', function(game){
             totalScore = frame.total;
         });
 
-        //add current frame score
+        //add current frame scores
         totalScore = totalScore +  _.reduce(currentFrame.try,
             function (memo, score) {
                 return memo + score.num;
