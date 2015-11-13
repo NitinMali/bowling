@@ -1,0 +1,54 @@
+<div class="game row voffset10">
+
+    <div class="table-responsive scoreTable">
+        <table ng-show="players.length > 0" class="table table-bordered">
+            <thead>
+            <tr>
+                <th></th>
+                <th ng-repeat="i in getEmptyFrames() track by $index">{{$index + 1}}</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr  ng-class="{info: $index+1==currentPlayer.id}"  ng-repeat="player in players track by $index">
+                <td class="playerName">{{player.name}}</td>
+                <td ng-repeat="i in getEmptyFrames() track by $index">
+                    <span class="scoreRow" ng-repeat="try in scores[$parent.$index].frames[$index].try track by $index">
+                            <!-- ng-show is to only show actual frame and hide bonus which are only for background score
+                            calculation-->
+                            <span class="scoreBox" ng-class="{strike: try.print=='X', spare: try.print=='/'}"
+                                  ng-show="$parent.$index == getEmptyFrames().length-1 || !try.bonus">
+                                <i>{{try.print}}</i>
+                            </span>
+
+                    </span>
+                    <span class="frameScore"><b>{{scores[$parent.$index].frames[$index].total}}</b></span>
+
+                </td>
+                <td ><span class="playerTotal">{{player.total}}</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row voffset20">
+    <div class="col-md-4">
+        <img class="ball" src="img/blue-ball.png" ng-click="getScore(0)" ng-hide="flashScore === 'Bye'">
+
+    </div>
+    <div class="col-md-4">
+        <div class="flashScreen">
+
+            <span ng-hide="flashScore === 'X' || flashScore === '/'">{{flashScore}}</span>
+
+            <img src="img/bowling_strike2.jpg" ng-show="flashScore === 'X'">
+
+            <img src="img/spare.png" ng-show="flashScore === '/'">
+
+        </div>
+    </div>
+    <div class="col-md-4">
+        <img class="ball" src="img/green-ball.png" ng-click="getScore(1)" ng-hide="flashScore === 'Bye'">
+    </div>
+</div>

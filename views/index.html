@@ -1,0 +1,34 @@
+<div class="game">
+    <p class="lead">Add players</p>
+
+    <p class="alert-danger">Data is stored on current instance, please don't refresh!!! All the best :)</p>
+
+    <div style="width:50%;" class="center-block">
+        <div class="row">
+            <div class="input-group">
+                <input type="text" class="form-control" ng-model="newPlayer" placeholder="Player name...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" ng-click="addPlayer()" type="button">Add</button>
+              </span>
+            </div>
+            <!-- /input-group -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row voffset10">
+            <ul class="list-group text-left" ng-show="players.length > 0">
+                <li class="list-group-item" ng-repeat="player in players">
+                    {{player.name}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="row voffset10" ng-show="players.length > 0">
+            <button ui-sref="play" class="btn btn-default btn-lg btn-info" type="button">Let's bowl</button>
+        </div>
+        <br>
+
+    </div>
+</div>
+
+

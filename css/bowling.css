@@ -1,0 +1,75 @@
+body {
+    background: url('../img/bg-black.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    padding-top: 50px;
+}
+.bowling {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.game {
+    background-color: #ffffff;
+}
+.table .scoreRow {
+    float: left;
+}
+
+
+.table .scoreBox {
+    margin-right: 3px;
+    padding: 8px;
+    border: 1px solid;
+}
+
+.frameScore {
+    padding:5px;
+    background-color: grey;
+    font-size: 18px;
+    color:#ffffff;
+}
+
+.playerTotal {
+    font-size: 20px;
+    color:red;
+}
+
+.strike {
+    background-color: orange;
+    color: #ffffff;
+}
+
+.spare {
+    background-color: green;
+    color: #ffffff;
+}
+
+.playerName {
+    font-size:16px;
+    font-weight: bold;
+}
+
+.ball {
+    cursor: pointer;
+}
+
+.flashScreen {
+    color: white;
+    border: 1px solid white;
+    background-color: coral;
+    font-size: 150px;
+}
+
+
+
+.voffset  { margin-top: 2px; }
+.voffset5 { margin-top: 5px; }
+.voffset10 { margin-top: 10px; }
+.voffset15 { margin-top: 15px; }
+.voffset20 { margin-top: 20px; }

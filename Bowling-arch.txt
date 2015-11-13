@@ -1,0 +1,12 @@
+Gobowling
+
+MEAN Stack
+Server: Node Server with Express
+Framework: Angular
+Testing & code quality: Jasmine & JShint
+Language: JS
+DB: MongoDB (Mongoose)/ Google
+Task runner: Grunt
+Design: Bootstrap
+Repo: GIT
+Packaging: Bower + NPM
