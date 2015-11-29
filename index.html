@@ -11,7 +11,7 @@
     <title>GoBowling</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/bowling.css" rel="stylesheet">
@@ -36,17 +36,14 @@
     </div>
 </div><!-- /.container -->
 
-
-
-<!-- Custom data -->
-<script src="js/data/data.js"></script>
-
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Angular -->
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
 <!-- UI-Router -->
-<script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
-<script src="lib/underscore-min.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
 
 <!-- Angular main app file -->
 <script src="app.js"></script>
@@ -55,11 +52,11 @@
 
 <script src="js/service/play-service.js"></script>
 
+<script src="js/directives/ball.js"></script>
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="lib/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/ie10-viewport-bug-workaround.js"></script>
 </body>

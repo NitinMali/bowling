@@ -21,3 +21,5 @@ node_modules
 
 ## Directory-based project format:
 .idea
+
+bower_components
