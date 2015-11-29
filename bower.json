@@ -1,0 +1,28 @@
+{
+  "name": "bowling",
+  "version": "0.0.1",
+  "description": "goBowling arena test assignment",
+  "main": "index.html",
+  "keywords": [
+    "bower",
+    "angular",
+    "bootstrap"
+  ],
+  "authors": [
+    "Nitin Mali"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.7",
+    "bootstrap": "~3.3.5",
+    "angular-ui-router": "~0.2.15",
+    "underscore": "~1.8.3"
+  }
+}
